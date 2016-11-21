@@ -15,7 +15,6 @@ class CompletionProvider implements vscode.CompletionItemProvider {
         vscode.CompletionItem | Thenable<vscode.CompletionItem> {
         return item;
     }
-
 }
 
 async function readAndRegisterSnippets(modeId: string, filePath: vscode.Uri) {
@@ -60,7 +59,7 @@ function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
             newSnippet.kind = vscode.CompletionItemKind.Snippet;
             newSnippet.detail = snippet['description'] || name,
             newSnippet.documentation = snippet['description'] || name,
-            newSnippet.insertText = bodyStringOrArray;
+            newSnippet.insertText = new vscode.SnippetString(bodyStringOrArray);
             result.push(newSnippet);
 		}
 	}
