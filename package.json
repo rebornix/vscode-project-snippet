@@ -2,12 +2,13 @@
     "name": "project-snippets",
     "displayName": "Project Snippets",
     "description": "Project/Workspace level snippets",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "rebornix",
     "engines": {
         "vscode": "^1.8.0"
     },
     "icon": "images/icon.png",
+    "preview": true,
     "repository": {
         "type": "git",
         "url": "https://github.com/rebornix/vscode-project-snippet.git"
