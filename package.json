@@ -2,7 +2,7 @@
     "name": "project-snippets",
     "displayName": "Project Snippets",
     "description": "Project/Workspace level snippets",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "publisher": "rebornix",
     "engines": {
         "vscode": "^1.8.0"
