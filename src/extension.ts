@@ -66,7 +66,7 @@ function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
 
 async function readAndRegisterSnippets(filePath: vscode.Uri): Promise<vscode.CompletionItem[]> {
     return new Promise<vscode.CompletionItem[]>((resolve, reject) => {
-        fs.readFile(filePath.path, { encoding: 'utf8' }, (err, data) => {
+        fs.readFile(filePath.fsPath, { encoding: 'utf8' }, (err, data) => {
             if (err) {
                 reject(err);
             }
