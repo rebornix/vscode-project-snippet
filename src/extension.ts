@@ -18,7 +18,7 @@ class CompletionProvider implements vscode.CompletionItemProvider {
     }
 }
 
-function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
+function parseSnippetFile(snippetFileContent: string, filePath: string): vscode.CompletionItem[] {
     try {
         let snippetsObj = JSON.parse(snippetFileContent);
 
@@ -60,6 +60,8 @@ function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
 
         return result;
     } catch (err) {
+        vscode.window.showErrorMessage(`Project snippets: parseSnippetFile ${filePath} error: ${err}`);
+
         return [];
     }
 }
@@ -71,7 +73,7 @@ async function readAndRegisterSnippets(filePath: vscode.Uri): Promise<vscode.Com
                 reject(err);
             }
 
-            let snippets = parseSnippetFile(data.toString());
+            let snippets = parseSnippetFile(data.toString(), filePath.path);
             resolve(snippets);
         });
     });
