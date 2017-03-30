@@ -20,7 +20,12 @@ class CompletionProvider implements vscode.CompletionItemProvider {
 
 function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
     try {
-        let snippetsObj = JSON.parse(snippetFileContent);
+        if (snippetFileContent === '') {
+            return [];
+        }
+
+        let jsonString = snippetFileContent.replace(/[\t]/g, '\\t');
+        let snippetsObj = JSON.parse(jsonString);
 
         if (!snippetsObj || typeof snippetsObj !== 'object') {
             return [];

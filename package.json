@@ -2,7 +2,7 @@
     "name": "project-snippets",
     "displayName": "Project Snippets",
     "description": "Project/Workspace level snippets",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "publisher": "rebornix",
     "engines": {
         "vscode": "^1.8.0"
@@ -36,7 +36,6 @@
         "postinstall": "node ./node_modules/vscode/bin/install"
     },
     "devDependencies": {
-        "@types/node": "^6.0.40",
         "typescript": "^2.0.3",
         "vscode": "^1.0.0"
     }
