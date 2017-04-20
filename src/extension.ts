@@ -24,8 +24,7 @@ function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
             return [];
         }
 
-        let jsonString = snippetFileContent.replace(/[\t]/g, '\\t');
-        let snippetsObj = JSON.parse(jsonString);
+        let snippetsObj = JSON.parse(snippetFileContent);
 
         if (!snippetsObj || typeof snippetsObj !== 'object') {
             return [];
