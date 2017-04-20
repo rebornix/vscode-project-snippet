@@ -2,6 +2,7 @@
 import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
+import JSON5 from 'json5';
 
 let _snippets: { [modeId: string]: vscode.CompletionItem[] } = Object.create(null);
 let _registeredProviders: { [modeId: string]: vscode.Disposable } = Object.create(null);
@@ -24,7 +25,7 @@ function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
             return [];
         }
 
-        let snippetsObj = JSON.parse(snippetFileContent);
+        let snippetsObj = JSON5.parse(snippetFileContent);
 
         if (!snippetsObj || typeof snippetsObj !== 'object') {
             return [];
