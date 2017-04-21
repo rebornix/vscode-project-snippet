@@ -1,4 +1,5 @@
-# project snippets 
+# project snippets [![Build Status](https://travis-ci.org/rebornix/vscode-project-snippet.svg?branch=master)](https://travis-ci.org/rebornix/vscode-project-snippet) [![Build status](https://ci.appveyor.com/api/projects/status/0ntf4072cfp2naig/branch/master?svg=true)](https://ci.appveyor.com/project/rebornix/vscode-project-snippet/branch/master)
+
 
 Provide workspace/project level code snippets.
 
