@@ -2,7 +2,7 @@
 import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as path from 'path';
-import JSON5 from 'json5';
+import * as JSON5 from 'json5';
 
 let _snippets: { [modeId: string]: vscode.CompletionItem[] } = Object.create(null);
 let _registeredProviders: { [modeId: string]: vscode.Disposable } = Object.create(null);
@@ -19,7 +19,7 @@ class CompletionProvider implements vscode.CompletionItemProvider {
     }
 }
 
-function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
+export function parseSnippetFile(snippetFileContent: string): vscode.CompletionItem[] {
     try {
         if (snippetFileContent === '') {
             return [];
