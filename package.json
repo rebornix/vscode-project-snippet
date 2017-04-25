@@ -28,7 +28,14 @@
         "*"
     ],
     "main": "./out/src/extension",
-    "contributes": {},
+    "contributes": {
+        "jsonValidation": [
+            {
+                "fileMatch": ".vscode/snippets/*.json",
+                "url": "./snippet.json"
+            }
+        ]
+    },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
         "compile": "tsc -watch -p ./",

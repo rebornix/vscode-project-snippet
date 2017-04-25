@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "type": "object",
+  "patternProperties": {
+    ".*": {
+      "description": "Snippet name",
+      "additionalProperties": false,
+      "required": [
+        "prefix",
+        "body"
+      ],
+      "properties": {
+        "prefix": {
+          "type": "string",
+          "description": "The snippet keyword"
+        },
+        "body": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
