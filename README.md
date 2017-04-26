@@ -37,5 +37,9 @@ For example, `.vscode/snippets/javascript.json`
 
 See <a href="https://medium.com/hack-visual-studio-code/share-snippets-with-your-team-in-vs-code-817801e853fb">this blog post</a> for more info.
 
+## Contributors
+* rebornix
+* [thongdong7](https://github.com/thongdong7)
+
 ## Credits
 <div>Icons made by <a href="http://www.flaticon.com/authors/maxim-basinski" title="Maxim Basinski">Maxim Basinski</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
