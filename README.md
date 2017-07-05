@@ -5,6 +5,11 @@ Provide workspace/project level code snippets.
 
 ![screenshot](images/screenshot.png)
 
+## Install
+
+- Press `Ctrl+Shift+P`
+- Type `ext install rebornix.project-snippets`
+
 ## Usage
 
 Put snippets at `.vscode/snippets/<languageId>.json`
