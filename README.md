@@ -1,3 +1,15 @@
+# :rotating_light: Deprecated :rotating_light: - This feature is now part of VSCode
+[This feature](https://github.com/Microsoft/vscode/issues/8102) now ships with visual studio code!
+
+Steps to using built-in workspace snippets:
+- Create a `{namehere}.code-snippets` file in `.vscode` folder
+- The file must be within `.vscode` folder (not in sub-folders)
+- Your snippets can now be checked in and shared with your team
+- Note: when using the snippet you will see `(Workspace Snippet)` in the intellisense autocomplete dropdown
+
+
+--------
+
 # project snippets [![Build Status](https://travis-ci.org/rebornix/vscode-project-snippet.svg?branch=master)](https://travis-ci.org/rebornix/vscode-project-snippet) [![Build status](https://ci.appveyor.com/api/projects/status/0ntf4072cfp2naig/branch/master?svg=true)](https://ci.appveyor.com/project/rebornix/vscode-project-snippet/branch/master)
 
 
